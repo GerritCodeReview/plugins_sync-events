@@ -1,0 +1,124 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af4878a1_5bad239b",
+        "filename": "BUCK",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-10T12:46:22Z",
+      "side": 1,
+      "message": "Now that this plugin is open sourced the URL should also point to the open source repository?",
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef3ef0eb_3dd5aff4",
+        "filename": "BUCK",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-10T12:46:22Z",
+      "side": 1,
+      "message": "this should go into lib/BUCK",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 1
+      },
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "af4878a1_bbc1c73b",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncevents/Context.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-10T12:46:22Z",
+      "side": 1,
+      "message": "The parameter is not really necessary as all calls to this method are the same:\n\n  setForwardedEvent(true);",
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef3ef0eb_bdc1bf3b",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-10T12:46:22Z",
+      "side": 1,
+      "message": "Is this block necessary? All these parameters are repeated/explained below.",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 22
+      },
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef3ef0eb_1db39304",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-10T12:46:22Z",
+      "side": 1,
+      "message": "nit: indentation off by one space",
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef3ef0eb_ddb80bdc",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-10T12:46:22Z",
+      "side": 1,
+      "message": "optional: would be nice to support the usual time units like ms,sec,min, etc...\n\nCan also be done in an own change\n\nSame for other options which specify time",
+      "range": {
+        "startLine": 30,
+        "startChar": 29,
+        "endLine": 30,
+        "endChar": 44
+      },
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
