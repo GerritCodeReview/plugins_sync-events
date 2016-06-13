@@ -84,6 +84,30 @@
     },
     {
       "key": {
+        "uuid": "0f27c499_06657a31",
+        "filename": "BUCK",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2016-06-13T09:32:22Z",
+      "side": 1,
+      "message": "I see. This is because then the path to such a lib would be \u0027//plugins/\u003cplugin-name\u003e/lib/\u003clib-name\u003e\u0027 when built from Gerrit source tree.",
+      "parentUuid": "0fafc462_8640ca8c",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 1
+      },
+      "revId": "bfd7785c286a77e42d667dd7d2256d556d1cc909",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "af4878a1_bbc1c73b",
         "filename": "src/main/java/com/ericsson/gerrit/plugins/syncevents/Context.java",
         "patchSetId": 3
