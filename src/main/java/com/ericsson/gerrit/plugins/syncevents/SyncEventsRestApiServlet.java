@@ -62,6 +62,10 @@ class SyncEventsRestApiServlet extends HttpServlet {
     rsp.setCharacterEncoding("UTF-8");
     try {
       Context.setForwardedEvent();
+      if (!MediaType.parse(req.getContentType()).is(JSON_UTF_8)) {
+        rsp.sendError(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
+        return;
+      }
       Event event = getEventFromRequest(req);
       dispatcher.postEvent(event);
       rsp.setStatus(SC_NO_CONTENT);
@@ -77,15 +81,12 @@ class SyncEventsRestApiServlet extends HttpServlet {
   }
 
   private Event getEventFromRequest(HttpServletRequest req) throws IOException {
-    if (MediaType.parse(req.getContentType()).is(JSON_UTF_8)) {
-      String jsonEvent = CharStreams.toString(req.getReader());
-      Gson gson = new GsonBuilder()
-          .registerTypeAdapter(Event.class, new EventDeserializer())
-          .registerTypeAdapter(Supplier.class, new SupplierDeserializer())
-          .create();
-      return gson.fromJson(jsonEvent, Event.class);
-    }
-    return null;
+    String jsonEvent = CharStreams.toString(req.getReader());
+    Gson gson = new GsonBuilder()
+        .registerTypeAdapter(Event.class, new EventDeserializer())
+        .registerTypeAdapter(Supplier.class, new SupplierDeserializer())
+        .create();
+    return gson.fromJson(jsonEvent, Event.class);
   }
 
   private static void sendError(HttpServletResponse rsp, int statusCode,
