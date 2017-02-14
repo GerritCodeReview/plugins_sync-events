@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0951d39f_05f13678",
+        "filename": "BUILD",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2017-02-14T22:15:05Z",
+      "side": 1,
+      "message": "This is all wrong. Test deps has nothing to do with final plugin artifact. Looking, why you got it wrong, i see, that Buck build is broken as well. Fixed in: [1].\n\n* [1] https://gerrit-review.googlesource.com/97358",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 22,
+        "endChar": 6
+      },
+      "revId": "0e77ebae3cb451983d5c57068bc1c50e057efaa5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
