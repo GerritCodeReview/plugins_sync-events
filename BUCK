@@ -5,17 +5,10 @@ include_defs('//bucklets/maven_jar.bucklet')
 SOURCES = glob(['src/main/java/**/*.java'])
 RESOURCES = glob(['src/main/resources/**/*'])
 
-DEPS = [
-  ':wiremock',
-]
-
-PROVIDED_DEPS = GERRIT_TESTS + [
-  '//lib:gson',
-]
-
-TEST_DEPS = GERRIT_PLUGIN_API + PROVIDED_DEPS + DEPS + [
+TEST_DEPS = GERRIT_PLUGIN_API + GERRIT_TESTS + [
   ':sync-events__plugin',
   ':mockito',
+  ':wiremock',
 ]
 
 gerrit_plugin(
@@ -31,8 +24,6 @@ gerrit_plugin(
     'Implementation-URL: https://gerrit-review.googlesource.com/#/admin/projects/plugins/sync-events',
     'Implementation-Vendor: Ericsson',
   ],
-  provided_deps = PROVIDED_DEPS,
-  deps = DEPS,
 )
 
 java_sources(
