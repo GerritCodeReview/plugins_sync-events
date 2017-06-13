@@ -56,7 +56,6 @@ public class SyncEventExecutorProviderTest {
     assertThat(syncEventsExecutorProvider.get()).isEqualTo(executorMock);
     syncEventsExecutorProvider.stop();
     verify(executorMock).shutdown();
-    verify(executorMock).unregisterWorkQueue();
     assertThat(syncEventsExecutorProvider.get()).isNull();
   }
 }

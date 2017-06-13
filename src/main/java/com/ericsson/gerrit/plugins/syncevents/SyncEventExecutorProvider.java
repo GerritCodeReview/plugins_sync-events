@@ -44,7 +44,6 @@ class SyncEventExecutorProvider
   @Override
   public void stop() {
     executor.shutdown();
-    executor.unregisterWorkQueue();
     executor = null;
   }
 
